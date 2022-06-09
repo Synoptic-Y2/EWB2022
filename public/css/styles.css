@@ -48,7 +48,12 @@ body {
 .formBox {
     width: 35vw;
     height: 5vh;
-    margin: 1em;    
+    margin: 1em;   
+    font-size: 1em; 
+
+   
+ 
+    
 }
 
 /* Hide Label */
