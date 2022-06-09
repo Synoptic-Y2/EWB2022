@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
 <body>
 
 	<main>
+		
+
+		
+<div class="loginBox">
+
+	<div class="loginTitle">LOGIN</div>
+	
+
+
+		<div class="loginForm">
 
 		<form action="/login" method="POST">
 			<label for = "username"> Username:</label>
 			<input type = "text" id = "username" name = "username" placeholder = "Username" accesskey = "U" required></br>
 			<label for = "password"> Password:</label>
 			<input type = "password" id = "password" name = "password" placeholder = "Password" accesskey = "P" required></br>
-		</div>
-		<div id = "submit" class = "submit">
-			<button type="submit" class="linked_button">Login</button>
-		</div>
-		<a href='/register'> Register</a>
+		</form>
 
+		</div>
+
+
+		<div id = "submit" class = "submit">
+
+			<button type="submit" class="linked_button">Login</button>
+			
+		</div>
+
+		<div class = "register">
+
+			<a href='/register'> Register</a>
+
+		</div>
+
+	</div>
 	</main>
 </body>
 </html>
