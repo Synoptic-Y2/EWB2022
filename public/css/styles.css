@@ -1,0 +1,67 @@
+html {
+    font-size: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body {
+
+    background-color: #cc6677   
+    
+}
+
+/* LOGIN */
+
+.loginBox {
+    background-color: white;
+    height: 60vh;
+    width: 40vw;
+
+    /*center login box*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  
+    border-radius: 20px;
+    padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.loginTitle {
+    text-align:center;
+    font-size: 4rem;
+    margin:10px;
+}
+
+.loginForm {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    line-height: 300%;
+    
+}
+
+.submit {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%) ;
+
+    
+}
+
+.linked_button {
+    font-size: 2rem;
+}
+
+.register {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%) ;
+
+}
