@@ -8,6 +8,10 @@ body {
     background-color: #cc6677   
     
 }
+.navbar-nav {
+    position: absolute;
+    right: 1rem;
+}
 
 /* LOGIN */
 
