@@ -50,7 +50,7 @@ body {
 .linked_button {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 150%;
     transform: translate(-50%) ;
 
     font-size: 2rem;
