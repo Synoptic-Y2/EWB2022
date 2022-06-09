@@ -8,6 +8,10 @@ body {
     background-color: #cc6677   
     
 }
+.navbar-nav {
+    position: absolute;
+    right: 1rem;
+}
 
 /* LOGIN */
 
@@ -45,16 +49,14 @@ body {
     
 }
 
-.submit {
+
+
+.linked_button {
     position: absolute;
     left: 50%;
     top: 70%;
     transform: translate(-50%) ;
 
-    
-}
-
-.linked_button {
     font-size: 2rem;
 }
 
