@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1652106222825",
+        "username": "test",
+        "email": "test@gmail.com",
+        "password": "$2b$10$8cm8w6Mzul2Y8i3R52W7eOGyXYj6Cede0B01AQnSKXa10jTn..naG"
+    },
+    {
+        "id": "1654613348599",
+        "username": "test",
+        "email": "b@o",
+        "password": "$2b$10$LsUipVzHQGTvjUzfegfmSOdK99tenxlDgaGqVJXi0QWLBA.MgJjay",
+        "address": "v",
+        "priv": "yes"
+    },
+    {
+        "id": "1654613481644",
+        "username": "test",
+        "email": "test@yahoo.com",
+        "password": "$2b$10$3Lmj.ub6dXPaUSr3s22wwu1hlwJk.Kh2clmPivgo/moZd6WAsj/de",
+        "address": "test",
+        "priv": "yes"
+    }
+]
