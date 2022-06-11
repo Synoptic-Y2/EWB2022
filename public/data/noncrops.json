@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Gum tree",
+        "season": "all",
+        "lifeCycle": "18-25 years",
+        "wildlife": "koalas, possums, and birds"
+    },
+    {
+        "name": "Bottlebrush",
+        "season": "5-10 year",
+        "lifeCycle": "",
+        "wildlife": "possums, flying foxes, lizards, insects and nectar-eating birds"
+    },
+    {
+        "name": "wattle",
+        "season": "spring",
+        "lifeCycle": "three to six months",
+        "wildlife": "Sugar Gliders, native bees, silvereyes and honeyeaters"
+    }
+]

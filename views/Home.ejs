@@ -2,12 +2,28 @@
 <html lang="en">
 
 <body>
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-dark">
+		  <a class="navbar-brand" href="/">Farm<strong> Good</strong></a>
+			<div class="navbar-nav">
+			  <a class="nav-item nav-link active" href="/">Home</a>
+			  <a class="nav-item nav-link" href="/Info">Help</a>
+			</div>
+		  </div>
+		</nav>
+	  </header>
 	<main>
 		<ul>
-			<li><a href="#">Help</a></li>
-			<li><form action="/logout?_method=DELETE" method="POST">
+			<button class=main-button onclick="document.location='/signup'">COMMUNITY</button>
+			<button class=main-button onclick="document.location='/signup'">TRADING</button>
+			<button class=small-button onclick="document.location='/signup'">PLANT NEW</button>
+			<button class=small-button onclick="document.location='/signup'">INFORMATION</button>
+			<button class=small-button onclick="document.location='/signup'">WEATHER</button>
+			<div><a href="#">Help</a></div>
+		<div><form action="/logout?_method=DELETE" method="POST">
 			<button type="submit" class="linked_button">Log Out</button>
-		</form></li>
+		</form></div>
+		<form action="/logout?_method=DELETE" method="POST"></form>
 		</ul>
 		
 
