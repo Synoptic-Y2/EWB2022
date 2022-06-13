@@ -71,12 +71,6 @@ app.use(expressLayouts);
 app.set("layout", "./pages/_Info");
 app.set("view engine", "ejs");
 
-
-/************ Other Pages ************/
-app.get('/info', (req, res) => {
-    res.render('Info.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
-})
-
 app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
         const hPass = await bcrypt.hash(req.body.password, 10)
@@ -95,6 +89,15 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
     catch {
         res.redirect('/register')
     }
+})
+
+/************ Other Pages ************/
+app.get('/info', (req, res) => {
+    res.render('Info.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
+})
+
+app.get('/newplant', (req, res) => {
+    res.render('NewPlant.ejs', { layout: './pages/_Info.ejs', title: 'New Plant' })
 })
 
 /************ Helper Functions ************/
