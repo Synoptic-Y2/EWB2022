@@ -6,29 +6,29 @@
 	<main>
 		<header>Register</header>
 
-		<form action="/register" method="POST" class = "login">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-			
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-			
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-			
+		<form action="/register" method="POST" class="login">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" required>
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
 			<label for="address">Address</label>
-            <input type="address" id="address" name="address" required>
-			
-			<label for="priv">Do you want your account private?</label>
-            <select name="priv" id="priv">
-				<option value="yes">Yes</option>
-				<option value="no">No</option>
-			</select>
-			
-			<button class="register" type="submit" >Register</button>
+			<input type="address" id="address" name="address" required>
+
+			<p class="form-link">Want Your Account Private?<a href="/info">(i)</a>
+				<select name="priv" id="priv">
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+				</select>
+
+				<button class="register" type="submit">Register</button>
 		</form>
-		
+
 	</main>
 </body>
-</html>
 
+</html>
