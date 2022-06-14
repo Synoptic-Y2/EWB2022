@@ -28,14 +28,17 @@ window.onload = function() {
 
 <h1>Create a new request</h1>
 
-<form name="newplant" id="newplant" action="/newplant">
-	Plant Type: <select name="planttype" id="planttype" required>
+<form name="create_a_request" id="create_a_request" action="/create_a_request">
+	Plant Type: <select name="planttype" id="planttype"required>
 		<option value="" selected="selected">Select a Plant Type</option>
 		</select>
 		<br><br>
 	Specific Plant: <select name="specplant" id="specplant" required>
 		<option value="" selected="selected">Please select a Plant Type first</option>
 		</select>
+		<br><br>
+	Amount: <input type="number" name="amount" id="amount" required>
+		</input>
 		<br><br>
 	<input type="submit" value="Submit">  
 </form>

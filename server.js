@@ -80,7 +80,11 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
             email: req.body.email,
             password: hPass,
             address: req.body.address,
-            priv: req.body.priv
+            priv: req.body.priv,
+			new: True,
+			cropList: 0,
+			noncropList: 0,
+			requests: 0
         })
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
@@ -96,8 +100,20 @@ app.get('/info', (req, res) => {
     res.render('Info.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
 })
 
-app.get('/newplant', (req, res) => {
+app.get('/community', (req, res) => {
+    res.render('Community.ejs', { layout: './pages/_Info.ejs', title: 'Community' })
+})
+
+app.get('/new_plant', (req, res) => {
     res.render('NewPlant.ejs', { layout: './pages/_Info.ejs', title: 'New Plant' })
+})
+
+app.get('/trading', (req, res) => {
+    res.render('Trading.ejs', { layout: './pages/_Info.ejs', title: 'Trading' })
+})
+
+app.get('/create_a_request', (req, res) => {
+    res.render('CreateRequest.ejs', { layout: './pages/_Info.ejs', title: 'Create a Request' })
 })
 
 /************ Helper Functions ************/

@@ -19,8 +19,8 @@
     },
 	{
         "name": "beetroot",
-        "season": "",
-        "yield": "",
+        "season": "summer",
+        "yield": "15-25 t/ha",
         "lifeCycle": "50-56 days"
     }
 ]

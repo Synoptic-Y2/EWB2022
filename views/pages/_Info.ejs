@@ -15,10 +15,13 @@
 	<!-- navbar -->
 	<header>
 		<nav class="navbar navbar-expand-sm navbar-dark">
-			<a class="navbar-brand" href="/">Farm<strong> Good</strong></a>
+			<a class="navbar-brand" href="/"><strong>Farm Good</strong></a>
 			<div class="navbar-nav">
 				<a class="nav-item nav-link active" href="/">Home</a>
 				<a class="nav-item nav-link" href="/Info">Help</a>
+				<form action="/logout?_method=DELETE" method="POST">
+					<button type="submit" class="logout">Log Out</button>
+				</form>
 			</div>
 			</div>
 		</nav>

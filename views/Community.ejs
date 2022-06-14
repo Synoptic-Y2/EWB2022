@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+</head>   
+<body>
+
+<h1>Community Page</h1>
+	<div id="container"></div>
+    <script>
+	anychart.onDocumentReady(function() {
+		// set the data
+		var data = [
+			{x: "wheat", value: 23},
+			{x: "oats", value: 14},
+			{x: "cauliflower", value: 1},
+			{x: "beetroot", value: 3}
+		];
+
+		// create the chart
+		var chart = anychart.pie();
+
+		// set the chart title
+		chart.title("Crops Throught the Community");
+
+		// add the data
+		chart.data(data);
+
+		// display the chart in the container
+		chart.container('container');
+		chart.draw();
+	});
+    </script>
+</body>
+</html>
