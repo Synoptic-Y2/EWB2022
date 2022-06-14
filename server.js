@@ -96,8 +96,8 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
 })
 
 /************ Other Pages ************/
-app.get('/info', (req, res) => {
-    res.render('Info.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
+app.get('/help', (req, res) => {
+    res.render('Help.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
 })
 
 app.get('/community', (req, res) => {
@@ -114,6 +114,10 @@ app.get('/trading', (req, res) => {
 
 app.get('/create_a_request', (req, res) => {
     res.render('CreateRequest.ejs', { layout: './pages/_Info.ejs', title: 'Create a Request' })
+})
+
+app.get('/weather', (req, res) => {
+    res.render('Weather.ejs', { layout: './pages/_Info.ejs', title: 'Weather' })
 })
 
 /************ Helper Functions ************/
