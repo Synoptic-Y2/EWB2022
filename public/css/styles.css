@@ -39,6 +39,15 @@ body {
     margin: 10px;
 }
 
+.loginText{
+    font-size:1.25em;
+
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%); 
+}
+
 .loginForm {
     position: absolute;
     left: 50%;
@@ -51,7 +60,7 @@ body {
 .formBox {
     width: 35vw;
     height: 5vh;
-    margin: 1em;
+    margin: 0.5em;
     font-size: 1em;
 
 
@@ -93,9 +102,60 @@ label[for="password"] {
     font-size: 2rem;
 }
 
-.register {
+.toRegister {
     position: absolute;
     left: 50%;
     top: 90%;
     transform: translate(-50%);
+}
+
+/*Register*/
+
+.registerTitle {
+    text-align: center;
+    font-size: 4rem;
+    margin: 10px;
+}
+
+.registerForm{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    line-height: 200%;
+}
+
+.form-link {
+
+    text-align: center;
+
+}
+
+/* Hide Label */
+
+label[for="email"] {
+    display: none;
+}
+
+label[for="address"] {
+    display: none;
+}
+
+.register {
+     /*positioning*/
+     position: absolute;
+     left: 50%;
+     top: 97%;
+     transform: translate(-50%);
+ 
+     font-size: 1rem;
+     width: 75%;
+     height: 7vh;
+     border: none;
+     border-radius: 5px;
+     font-weight: 600;
+     color: #fff;
+     background-color: #882255;
+     cursor: pointer;
+     font-size: 2rem;
 }
