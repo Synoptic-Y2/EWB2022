@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="/css/styleS.css">
 	<link rel="icon" href="/images/icon.ico">
 	<title>
 		<%-title %>
@@ -29,30 +29,8 @@
 	<main>
 		<%- body %>
 	</main>
-	<script>
-		//============================== Check Passwords are same and long enough ==================================
-		$(document).ready(function () {
-			$("#createAccount").submit(function () {
-				var password = $("#password1").val();
-				var confirmpassword = $("#password2").val();
-				if (password.length > 5) {
-					$("#error").text("");
-					if (password == confirmpassword) {
-						$("#error").text("");
-						return true;
-					}
-					else {
-						$("#error").text("Passwords are not the same");
-						return false;
-					}
-				}
-				else {
-					$("#error").text("Password is not long enough");
-					return false;
-				}
-			})
-		})
-	</script>
+	<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
 </body>
 
 </html>
