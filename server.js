@@ -51,7 +51,7 @@ app.get('/', checkAuthenticated, (req, res) => {
 
 /************ Login/Logout ************/
 app.get('/login', checkNotAuthenticated, (req, res) => {
-    res.render('Login.ejs', { layout: './pages/_head.ejs', title: 'Login' })
+    res.render('Login.ejs', { layout: './pages/_logreg.ejs', title: 'Login' })
 })
 
 // The login POST request will be handled in passport-config.js
@@ -68,7 +68,7 @@ app.delete('/logout', (req, res) => {
 
 /************ Register ************/
 app.get('/register', checkNotAuthenticated, (req, res) => {
-    res.render('Register.ejs', { layout: './pages/_head.ejs', title: 'Register' })
+    res.render('Register.ejs', { layout: './pages/_logreg.ejs', title: 'Register' })
 })
 
 
