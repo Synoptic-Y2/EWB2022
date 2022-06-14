@@ -22,8 +22,16 @@ ul {
     color:#882255;
 }
 
+.navbar a {
+ text-decoration: none;
+ color:#882255;
+}
+
 .navbar-brand {
     font-size:2rem;
+    position: absolute;
+    left:1vw;
+    top:0.2vh;
 
 }
 .navbar-nav {
