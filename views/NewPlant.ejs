@@ -28,7 +28,7 @@ window.onload = function() {
 
 <h1>Create a new request</h1>
 
-<form name="newplant" id="newplant" action="/newplant">
+<form name="new_plant" id="new_plant" action="/new_plant" method="POST">
 	Plant Type: <select name="planttype" id="planttype" required>
 		<option value="" selected="selected">Select a Plant Type</option>
 		</select>
@@ -37,7 +37,7 @@ window.onload = function() {
 		<option value="" selected="selected">Please select a Plant Type first</option>
 		</select>
 		<br><br>
-	<input type="submit" value="Submit">  
+	<button type="submit">Submit</button>
 </form>
 
 </body>

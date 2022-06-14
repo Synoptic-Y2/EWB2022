@@ -46,7 +46,8 @@ let users = JSON.parse(rawdata);
 
 /************ Home - Home Page ************/
 app.get('/', checkAuthenticated, (req, res) => {
-    res.render('Home.ejs', { layout: './pages/_head.ejs', title: 'Home' })
+	let userID = req.user.id
+    res.render('Home.ejs', { layout: './pages/_head.ejs', title: 'Home', passedid: req.user.id })
 })
 
 /************ Login/Logout ************/
@@ -71,10 +72,11 @@ app.get('/register', checkNotAuthenticated, (req, res) => {
     res.render('Register.ejs', { layout: './pages/_logreg.ejs', title: 'Register' })
 })
 
-
 app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
+	
         const hPass = await bcrypt.hash(req.body.password, 10)
+		
         users.push({
             id: Date.now().toString(),
             username: req.body.username,
@@ -82,17 +84,82 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
             password: hPass,
             address: req.body.address,
             priv: req.body.priv,
-			new: True,
-			cropList: 0,
-			noncropList: 0,
-			requests: 0
+			crop: [],
+			noncrop: [],
+			request: {}
         })
+	
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
         res.redirect('/login')
     }
     catch {
+		
         res.redirect('/register')
+    }
+})
+
+/************ New Plant ************/
+
+app.get('/new_plant', (req, res) => {
+	console.log("out12")
+    res.render('NewPlant.ejs', { layout: './pages/_head.ejs', title: 'New Plant', passedid: req.user.id })
+})
+
+app.post('/new_plant', checkAuthenticated, async (req, res) => {
+    console.log("out1")
+	planttype = req.body.planttype
+	specplant = req.body.specplant
+	try {
+		users.forEach(function (obj, index) {
+			if (obj.id == req.user.id){
+				if(planttype == "Crop"){
+					obj.crop.push(specplant)
+				}
+				else if(planttype == "Non-Crop"){
+					obj.noncrop.push(specplant)
+				}
+			}
+		})
+
+        let userdata = JSON.stringify(users, undefined, 4)
+        fs.writeFileSync('public/data/users.json', userdata)
+        res.redirect('/')
+    }
+    catch {
+        res.redirect('/new_plant')
+    }
+})
+
+/************ Other Pages ************/
+
+app.get('/create_a_request', (req, res) => {
+    res.render('CreateRequest.ejs', { layout: './pages/_head.ejs', title: 'Create a Request' })
+})
+
+app.post('/create_a_request', checkAuthenticated, async (req, res) => {
+    console.log("out1")
+	planttype = req.body.planttype
+	specplant = req.body.specplant
+
+	try {
+		users.forEach(function (obj, index) {
+			if (obj.id == req.user.id){
+				if(planttype == "Crop"){
+					obj.request.push(specplant)
+				}
+				else if(planttype == "Non-Crop"){
+					obj.request.push(specplant)
+				}
+			}
+		})
+
+        let userdata = JSON.stringify(users, undefined, 4)
+        fs.writeFileSync('public/data/users.json', userdata)
+        res.redirect('trading')
+    }
+    catch {
+        res.redirect('/create_a_request')
     }
 })
 
@@ -109,16 +176,8 @@ app.get('/community', (req, res) => {
     res.render('Community.ejs', { layout: './pages/_head.ejs', title: 'Community' })
 })
 
-app.get('/new_plant', (req, res) => {
-    res.render('NewPlant.ejs', { layout: './pages/_head.ejs', title: 'New Plant' })
-})
-
 app.get('/trading', (req, res) => {
     res.render('Trading.ejs', { layout: './pages/_head.ejs', title: 'Trading' })
-})
-
-app.get('/create_a_request', (req, res) => {
-    res.render('CreateRequest.ejs', { layout: './pages/_head.ejs', title: 'Create a Request' })
 })
 
 app.get('/weather', (req, res) => {

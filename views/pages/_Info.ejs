@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="/images/icon.ico">
+	<title>
+		<%-title %>
+	</title>
+</head>
+
+<body>
+	<!-- navbar -->
+	<header>
+		<nav class="navbar navbar-expand-sm navbar-dark">
+			<a class="navbar-brand" href="/"><strong>Cape York Market</strong></a>
+			<div class="navbar-nav">
+				<a class="nav-item nav-link active" href="/">Home</a>
+				<a class="nav-item nav-link" href="/help">Help</a>
+				<form action="/logout?_method=DELETE" method="POST">
+					<button type="submit" class="logout">Log Out</button>
+				</form>
+			</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<%- body %>
+	</main>
+	<script>
+		//============================== Check Passwords are same and long enough ==================================
+		$(document).ready(function () {
+			$("#createAccount").submit(function () {
+				var password = $("#password1").val();
+				var confirmpassword = $("#password2").val();
+				if (password.length > 5) {
+					$("#error").text("");
+					if (password == confirmpassword) {
+						$("#error").text("");
+						return true;
+					}
+					else {
+						$("#error").text("Passwords are not the same");
+						return false;
+					}
+				}
+				else {
+					$("#error").text("Password is not long enough");
+					return false;
+				}
+			})
+		})
+	</script>
+</body>
+
+</html>
