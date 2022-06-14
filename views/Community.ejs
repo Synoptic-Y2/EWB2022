@@ -27,6 +27,17 @@
 
 		// add the data
 		chart.data(data);
+		
+		// set legend position and items layout
+		chart
+		.legend()
+		.position('right')
+		.itemsLayout('vertical')
+		.align('centre');
+		
+		//visuals
+		chart.palette(anychart.palettes.glamour);
+
 
 		// display the chart in the container
 		chart.container('container');
