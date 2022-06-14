@@ -28,6 +28,7 @@ ul {
 }
 .navbar-nav {
     position: absolute;
+    top: 1.5vh;
     right: 1rem;
 }
 
