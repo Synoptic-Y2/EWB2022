@@ -39,7 +39,10 @@ ul {
     border-radius: 2px;
     border:#fff;
 }
-
+.error {
+    color: red;
+    font-size: 1;
+  }
 
 
 /* LOGIN */
