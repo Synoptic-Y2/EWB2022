@@ -20,5 +20,13 @@
         "password": "$2b$10$3Lmj.ub6dXPaUSr3s22wwu1hlwJk.Kh2clmPivgo/moZd6WAsj/de",
         "address": "test",
         "priv": "yes"
+    },
+    {
+        "id": "1655169900974",
+        "username": "test123",
+        "email": "test@test.com",
+        "password": "$2b$10$3Q.t/MRtX18jby0J8oyh..6SQ1EIQy6VH2ciqkp4MEvSO3dfx5VUC",
+        "address": "123",
+        "priv": "no"
     }
 ]
