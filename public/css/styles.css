@@ -38,20 +38,23 @@ ul {
     position: absolute;
     top: 1.5vh;
     right: 1rem;
+    margin-right:7vw; 
+    
 }
 
 .nav-item {
    
     position: relative;
     margin-top:-10px;
-    margin-right:10vw;   
+    margin-left:3.5vw;
+      
 }
 /* GLOBAL */
 
 .logout {
     position: absolute;
-    top: -0.5vh;
-    right:0vw;
+    top: 1vh;
+    right:1vw;
 
     color:#882255;
     background-color:#fff;  
