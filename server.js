@@ -36,6 +36,9 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOverride('_method'))
+app.use(expressLayouts);
+app.set("layout", "./pages/_head");
+app.set("view engine", "ejs");
 
 // read user json data
 let rawdata = fs.readFileSync('public/data/users.json');
@@ -43,12 +46,12 @@ let users = JSON.parse(rawdata);
 
 /************ Home - Home Page ************/
 app.get('/', checkAuthenticated, (req, res) => {
-    res.render('Home.ejs', { layout: './pages/_Info.ejs', title: 'Home' })
+    res.render('Home.ejs', { layout: './pages/_head.ejs', title: 'Home' })
 })
 
 /************ Login/Logout ************/
 app.get('/login', checkNotAuthenticated, (req, res) => {
-    res.render('Login.ejs', { layout: './pages/_Info.ejs', title: 'Login' })
+    res.render('Login.ejs', { layout: './pages/_logreg.ejs', title: 'Login' })
 })
 
 // The login POST request will be handled in passport-config.js
@@ -65,11 +68,9 @@ app.delete('/logout', (req, res) => {
 
 /************ Register ************/
 app.get('/register', checkNotAuthenticated, (req, res) => {
-    res.render('Register.ejs', { layout: './pages/_Info.ejs', title: 'Register' })
+    res.render('Register.ejs', { layout: './pages/_logreg.ejs', title: 'Register' })
 })
-app.use(expressLayouts);
-app.set("layout", "./pages/_Info");
-app.set("view engine", "ejs");
+
 
 app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
@@ -97,27 +98,31 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
 
 /************ Other Pages ************/
 app.get('/help', (req, res) => {
-    res.render('Help.ejs', { layout: './pages/_Info.ejs', title: 'Sign Up' })
+    res.render('Help.ejs', { layout: './pages/_head.ejs', title: 'Sign Up' })
+})
+
+app.get('/information', (req, res) => {
+    res.render('Help.ejs', { layout: './pages/_head.ejs', title: 'Sign Up' })
 })
 
 app.get('/community', (req, res) => {
-    res.render('Community.ejs', { layout: './pages/_Info.ejs', title: 'Community' })
+    res.render('Community.ejs', { layout: './pages/_head.ejs', title: 'Community' })
 })
 
 app.get('/new_plant', (req, res) => {
-    res.render('NewPlant.ejs', { layout: './pages/_Info.ejs', title: 'New Plant' })
+    res.render('NewPlant.ejs', { layout: './pages/_head.ejs', title: 'New Plant' })
 })
 
 app.get('/trading', (req, res) => {
-    res.render('Trading.ejs', { layout: './pages/_Info.ejs', title: 'Trading' })
+    res.render('Trading.ejs', { layout: './pages/_head.ejs', title: 'Trading' })
 })
 
 app.get('/create_a_request', (req, res) => {
-    res.render('CreateRequest.ejs', { layout: './pages/_Info.ejs', title: 'Create a Request' })
+    res.render('CreateRequest.ejs', { layout: './pages/_head.ejs', title: 'Create a Request' })
 })
 
 app.get('/weather', (req, res) => {
-    res.render('Weather.ejs', { layout: './pages/_Info.ejs', title: 'Weather' })
+    res.render('Weather.ejs', { layout: './pages/_head.ejs', title: 'Weather' })
 })
 
 /************ Helper Functions ************/
