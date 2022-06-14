@@ -37,7 +37,7 @@ ul {
 .navbar-nav {
     position: absolute;
     top: 1.5vh;
-    right: 1rem;
+    right: 2.2rem;
     margin-right:7vw; 
     
 }
@@ -55,9 +55,11 @@ ul {
     position: absolute;
     top: 1vh;
     right:1vw;
+    
 
-    color:#882255;
-    background-color:#fff;  
+
+    color:#fff;
+    background-color:#882255;  
     border-radius: 2px;
     border:#882255;
 
@@ -65,10 +67,10 @@ ul {
 }
 
 .logout:hover {
-    color:#fff;
-    background-color:#882255;  
+    color:#882255;
+    background-color:#fff;  
     border-radius: 2px;
-    border-color:#fff;
+    border-color:#882255;
 
     cursor:pointer;
 }
