@@ -346,3 +346,16 @@ label[for="address"] {
     background-color: white;
     color: #882255;
 }
+
+.img_map{
+	padding-left:10px;
+	padding-right:20px;
+	width:75%;
+}
+
+.img_forecast{
+	float:right;
+	padding-right:25px;
+	width:20%;
+	transform: translateY(30%);
+}
