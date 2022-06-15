@@ -2,6 +2,7 @@
     {
         "id": "1655218665764",
         "username": "test",
+		"names": "TEST TEST",
         "email": "test@test",
         "password": "$2b$10$X2X0anxZwkQbJ3bhS.qR2eXpUWgqCuXA1F1Hjjk0FaL1uEOSfVcmy",
         "address": "6 test Ave",
@@ -24,6 +25,7 @@
     {
         "id": "1655302129489",
         "username": "test123",
+		"names": "TEST TEST",
         "email": "test@test.com",
         "password": "$2b$10$2BIWX6EzNbq9YcZQg6pItOjxeGT1bdCce9kQOQURdr2I6wfv0fj.K",
         "address": "test",
@@ -31,6 +33,18 @@
         "crop": [
             "oats"
         ],
+        "noncrop": [],
+        "request": {}
+    },
+    {
+        "id": "1655334263598",
+        "username": "test",
+        "names": "TESTEST",
+        "email": "TEST@gmail.com",
+        "password": "$2b$10$mZHz3RET0XqFanHRjkQqUuFVMAtqMOO8CgeNh5Xt.odnjNpM19GXy",
+        "address": "5 test Ave",
+        "priv": "no",
+        "crop": [],
         "noncrop": [],
         "request": {}
     }
