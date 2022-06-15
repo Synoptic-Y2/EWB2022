@@ -499,6 +499,22 @@ label[for="address"] {
     cursor: pointer;
 }
 
+#register_back{
+	float: left;
+	transform: translate(10%, 1450%);
+	
+	color: #882255;
+    background-color: #fff;
+    border-radius: 2px;
+    border: #882255;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+
+
 #create_a_request {
     position: absolute;
 
