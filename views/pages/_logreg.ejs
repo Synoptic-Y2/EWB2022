@@ -19,28 +19,31 @@
 	<main>
 		<%- body %>
 	</main>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script>
 		//============================== Check Passwords are same and long enough ==================================
 		$(document).ready(function () {
 			$("#createAccount").submit(function () {
 				var password = $("#password").val();
 				var confirmpassword = $("#password2").val();
-				if (password.length > 5) {
-					$("#error").text("");
-					if (password == confirmpassword) {
-						$("#error").text("");
-						return true;
-					}
-					else {
-						$("#error").text("Passwords are not the same");
-						return false;
-					}
+				var regex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+
+				if (password != confirmpassword) {
+					$("#error").text("Passwords are not the same");
+					return false;
+				}
+				else if (password.length < 5) {
+					$("#error").text("Password is not long enough");
+					return false
+				}
+				else if (regularExpression.test(password)) {
+					console.log("fuck")
+					$("#error").text("Password needs a number and a special character");
+					return false;
 				}
 				else {
-					$("#error").text("Password is not long enough");
+					$("#error").text("");
 					return false;
 				}
 			})

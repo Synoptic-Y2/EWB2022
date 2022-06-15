@@ -1,48 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
 </head>
-
 <body>
 
 	<main>
 
 		<div class="loginBox">
 
-		
 		<header class="registerTitle">REGISTER</header>
 
+			<div class="registerForm">
+				<form class="form" id="createAccount" method="POST" action="/register">
+					<label for="username">Username</label>
+					<input class ="formBox" type="text" id="username" name="username" placeholder="Username" required>
 
-		<div class="registerForm">
-		<form class="form" id="createAccount" method="POST" action="/login">
-			<label for="username">Username</label>
-			<input class ="formBox" type="text" id="username" name="username" placeholder="Username" required>
+					<label for="email">Email</label>
+					<input class ="formBox" type="email" id="email" name="email" placeholder="E-mail" required>
 
-			<label for="email">Email</label>
-			<input class ="formBox" type="email" id="email" name="email" placeholder="E-mail" required>
+					<label for="password">Password</label>
+					<input class ="formBox" type="password" id="password" name="password" placeholder="Password" required>
 
-			<label for="password">Password</label>
-			<input class ="formBox" type="password" id="password" name="password" placeholder="Password" required>
+					<label for="password">Confirm Password</label>
+					<input class ="formBox" type="password" id="password2" name="password2" placeholder="Confirm Password" required>
+					
+					<div class="form-input-error-message"></div>
+					
+					<div class="error" id="error" placeholder="no errors"></div>
+					
+					<label for="address">Address</label>
+					<input class ="formBox" type="address" id="address" name="address" placeholder="Home Address" required>
+					
+					<p class="form-link">Want Your Account Private?<a href="/help">(i)</a>
+						<select name="priv" id="priv">
+							<option value="no">No</option>
+							<option value="yes">Yes</option>
+						</select>
 
-			<label for="password">Password2</label>
-			<input class ="formBox" type="password" id="password2" name="password2" placeholder="Password2" required>
-			
-			<div class="error" id="error" placeholder="no errors"></div>
-			
-			<label for="address">Address</label>
-			<input class ="formBox" type="address" id="address" name="address" placeholder="Home Address" required>
-			
-			<p class="form-link">Want Your Account Private?<a href="/help">(i)</a>
-				<select name="priv" id="priv">
-					<option value="no">No</option>
-					<option value="yes">Yes</option>
-				</select>
-
-				<button class="register" type="submit">Register</button>
-		</form>
-	</div>
-	</div>
+						<button class="register" type="submit">Register</button>
+				</form>
+			</div>
+		</div>
 	</main>
 </body>
 
