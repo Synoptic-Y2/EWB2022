@@ -565,3 +565,17 @@ td{
 th{
 	font-size: 25px;
 }
+
+h2{
+	font-size:22px;
+	line-height: 0px;
+}
+
+.help{
+	padding:0;
+	margin: 7px;
+}
+
+.helpDIV{
+	padding-bottom: 5px;
+}
