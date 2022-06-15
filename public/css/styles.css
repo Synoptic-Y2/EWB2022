@@ -262,6 +262,10 @@ label[for="address"] {
     display: none;
 }
 
+label[for="names"] {
+    display: none;
+}
+
 .register {
     /*positioning*/
     position: absolute;
