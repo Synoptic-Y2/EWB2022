@@ -60,12 +60,10 @@ table {
     margin-right: 1vw;
 }
 
-.column {
-    float: left;
-    width: 50%;
-}
-
 .centerRight {
+	padding-right:15px;
+	float: left;
+    width: 50%;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -76,15 +74,15 @@ table {
 }
 
 .centerLeft {
-
+	padding-left:15px;
+	float: left;
+    width: 50%;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 25%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-
-
 }
 
 
@@ -535,9 +533,6 @@ label[for="address"] {
     cursor: pointer;
 }
 
-
-
-
 #create_a_request {
     position: absolute;
 
@@ -547,4 +542,22 @@ label[for="address"] {
     line-height: 200%;
 
     text-align: center;
+}
+
+table, th, td{
+	border: 2px solid black;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td{
+	line-height: 25px;
+	font-size: 15px;
+}
+
+th{
+	font-size: 25px;
 }
