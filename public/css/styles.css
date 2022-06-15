@@ -50,7 +50,7 @@ table {
     float: right;
     text-align: center;
     padding: 14px 80px;
-    text-decoration: none;
+    text-decoration: none
     font-size: 16px;
 }
 
@@ -118,7 +118,7 @@ table {
 
 .smallBox {
     background-color: white;
-    height: 65vh;
+    height: 85vh;
     width: 40vw;
 
     /*center login box*/
@@ -522,7 +522,7 @@ label[for="address"] {
 
 #register_back {
     float: left;
-    transform: translate(10%, 1450%);
+    transform: translate(10%, 1940%);
 
     color: #882255;
     background-color: #fff;

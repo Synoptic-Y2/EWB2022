@@ -80,6 +80,7 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
         users.push({
             id: Date.now().toString(),
             username: req.body.username,
+			names: req.body.names,
             email: req.body.email,
             password: hPass,
             address: req.body.address,
