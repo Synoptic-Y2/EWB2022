@@ -163,7 +163,9 @@ app.post('/trading/create_a_request', checkAuthenticated, async (req, res) => {
 			if (obj.id == req.user.id){
 				obj.request.push({
 					crop: req.body.specplant,
-					amount: req.body.amount
+					amount: req.body.amount,
+					filled:0,
+					filledBy:0
 				})
 			}
 		})
