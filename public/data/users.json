@@ -13,6 +13,11 @@
         "noncrop": [
             "Bottlebrush"
         ],
-        "request": {}
+        "request": [
+            {
+                "crop": "cauliflower",
+                "amount": "2"
+            }
+        ]
     }
 ]

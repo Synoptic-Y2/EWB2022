@@ -102,12 +102,11 @@ app.post('/register', checkNotAuthenticated, async (req, res) => {
 /************ New Plant ************/
 
 app.get('/new_plant', (req, res) => {
-	console.log("out12")
     res.render('NewPlant.ejs', { layout: './pages/_head.ejs', title: 'New Plant', passedid: req.user.id })
 })
 
 app.post('/new_plant', checkAuthenticated, async (req, res) => {
-    console.log("out1")
+
 	planttype = req.body.planttype
 	specplant = req.body.specplant
 	try {
@@ -138,22 +137,16 @@ app.get('/create_a_request', (req, res) => {
 })
 
 app.post('/create_a_request', checkAuthenticated, async (req, res) => {
-    console.log("out1")
-	planttype = req.body.planttype
-	specplant = req.body.specplant
 
 	try {
 		users.forEach(function (obj, index) {
 			if (obj.id == req.user.id){
-				if(planttype == "Crop"){
-					obj.request.push(specplant)
-				}
-				else if(planttype == "Non-Crop"){
-					obj.request.push(specplant)
-				}
+				obj.request.push({
+					crop: req.body.specplant,
+					amount: req.body.amount
+				})
 			}
 		})
-
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
         res.redirect('trading')
