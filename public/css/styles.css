@@ -6,6 +6,8 @@ html {
 body {
     /* made using https://bgjar.com/shiny-overlay */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1111%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsRadialGradient1112)'%3e%3c/rect%3e%3cpath d='M1920 0L1917.19 0L1920 48.09z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1917.19 0L1920 48.09L1920 218.58L1633.63 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1633.63 0L1920 218.58L1920 548.36L741.7400000000001 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M741.74 0L1920 548.36L1920 760.1600000000001L474.62 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1080L443.47 1080L0 815.1800000000001z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 815.1800000000001L443.47 1080L754.83 1080L0 583.5100000000001z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 583.51L754.83 1080L1212.8200000000002 1080L0 277.92z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 277.9200000000001L1212.8200000000002 1080L1661.3200000000002 1080L0 256.50000000000006z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1111'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='0%25' cy='50%25' r='1994.49' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1112'%3e%3cstop stop-color='rgba(136%2c 34%2c 85%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(170%2c 68%2c 153%2c 1)' offset='0.62'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin: 0;
 }
 
@@ -20,22 +22,23 @@ ul {
 }
 
 table {
-    font-size:1.2rem;
+    font-size: 1.2rem;
     line-height: 7vh;
-  }
+}
 
 .navbar {
     top: 0;
     background-color: #fff;
-    height: 5vh;
+
     border-bottom: 2px;
+    padding: 10px 10px;
 
     color: #882255;
 }
 
 .navbar a {
- text-decoration: none;
- color:#882255;
+    text-decoration: none;
+    color: #882255;
 }
 
 .navbar-brand {
@@ -44,22 +47,22 @@ table {
 }
 
 .navbar-nav {
-    position: absolute;
-    top: 1.5vh;
-    right: 2.2rem;
-    margin-right:7vw; 
-    
+    float: right;
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .nav-item {
     position: relative;
     margin: top -1%;
-    margin-right: 10vw;
+    margin-right: 1vw;
 }
 
 .column {
-   float:left;
-   width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .centerRight {
@@ -73,15 +76,15 @@ table {
 }
 
 .centerLeft {
-    
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    
-    
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+
 }
 
 
@@ -90,8 +93,8 @@ table {
 
 .logout {
     position: absolute;
-	right:1%;
-	top:1%;
+    right: 1%;
+    top: 1%;
 
     color: #882255;
     background-color: #fff;
@@ -238,15 +241,15 @@ label[for="password"] {
     left: 50%;
     top: 90%;
     transform: translate(-50%);
-	
-	font-size: 1rem;
+
+    font-size: 1rem;
     width: 25%;
     height: 7vh;
     border-radius: 5px;
     font-weight: 600;
     color: #fff;
     background-color: #882255;
-	border-color: #e7e7e7;
+    border-color: #e7e7e7;
     cursor: pointer;
     font-size: 2rem;
 }
@@ -359,8 +362,8 @@ label[for="address"] {
 
 /*NEW PLANT*/
 #new_plant {
-    
-    
+
+
     position: absolute;
 
     left: 50%;
@@ -368,12 +371,12 @@ label[for="address"] {
     transform: translate(-50%, -50%);
     line-height: 200%;
 
-    text-align:center;
-    
+    text-align: center;
+
 }
 
-#new_plant h1{
-    font-size:0.5rem;
+#new_plant h1 {
+    font-size: 0.5rem;
 }
 
 
@@ -390,21 +393,29 @@ label[for="address"] {
 }
 
 .grid_area {
+<<<<<<< HEAD
 	position: absolute;
 	padding-top: 10px;
 	width:95%;
 	top:100px;
 	left: 50%;
+=======
+    position: absolute;
+    width: 95%;
+    top: 100px;
+    left: 50%;
+>>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
     transform: translate(-50%);
 }
 
-.grid_area .row{
-	display: flex;
-	justify-content: space-between;
-	padding-bottom:15px;
+.grid_area .row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
 }
 
 .grid_area .row .request {
+<<<<<<< HEAD
 	flex-basis: 32%;
 	background-color: #E9A5C7;
 	border-radius: 5px;
@@ -420,31 +431,57 @@ label[for="address"] {
 	height:110px;
 	border-style: ridge;
 	position: relative;
+=======
+    flex-basis: 32%;
+    background-color: white;
+    border-radius: 5px;
+    height: 100px;
+    border-style: ridge;
+    position: relative;
+}
+
+.grid_area .row .request_v2 {
+    flex-basis: 32%;
+    background-color: white;
+    border-radius: 5px;
+    height: 110px;
+    border-style: ridge;
+    position: relative;
+>>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
 }
 
 .grid_area .row .request #request_button {
-	position:absolute;
+    position: absolute;
     bottom: 0;
     right: 0;
+<<<<<<< HEAD
 	width: 100%;
 	background-color: #882255;
 	color: white;
 	cursor: pointer;
 	border: none;
 	height: 25%;
+=======
+    width: 100%;
+>>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
 }
 
 .trading_button {
-	flex-basis: 48%;
-	border: 2px solid black;
+    flex-basis: 48%;
+    border: 2px solid black;
     border-radius: 5px;
     font-weight: 600;
     color: white;
     background-color: #882255;
     cursor: pointer;
     font-size: 2rem;
+<<<<<<< HEAD
 	position: relative;
 	height:230px;
+=======
+    position: relative;
+    height: 200px;
+>>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
 }
 
 .trading_button:hover {
@@ -452,24 +489,24 @@ label[for="address"] {
     color: #882255;
 }
 
-.img_map{
-	padding-left:10px;
-	padding-right:20px;
-	width:75%;
+.img_map {
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 75%;
 }
 
-.img_forecast{
-	float:right;
-	padding-right:25px;
-	width:20%;
-	transform: translateY(30%);
+.img_forecast {
+    float: right;
+    padding-right: 25px;
+    width: 20%;
+    transform: translateY(30%);
 }
 
-#trading_back{
-	float: left;
-	transform: translate(10%, 1900%);
-	
-	color: #882255;
+#trading_back {
+    float: left;
+    transform: translate(10%, 1900%);
+
+    color: #882255;
     background-color: #fff;
     border-radius: 2px;
     border: #882255;
@@ -485,11 +522,11 @@ label[for="address"] {
     cursor: pointer;
 }
 
-#request_back{
-	float: left;
-	transform: translate(10%, 1150%);
-	
-	color: #882255;
+#request_back {
+    float: left;
+    transform: translate(10%, 1150%);
+
+    color: #882255;
     background-color: #fff;
     border-radius: 2px;
     border: #882255;
@@ -505,11 +542,11 @@ label[for="address"] {
     cursor: pointer;
 }
 
-#register_back{
-	float: left;
-	transform: translate(10%, 1450%);
-	
-	color: #882255;
+#register_back {
+    float: left;
+    transform: translate(10%, 1450%);
+
+    color: #882255;
     background-color: #fff;
     border-radius: 2px;
     border: #882255;
@@ -529,5 +566,5 @@ label[for="address"] {
     transform: translate(-50%, -50%);
     line-height: 200%;
 
-    text-align:center;
+    text-align: center;
 }
