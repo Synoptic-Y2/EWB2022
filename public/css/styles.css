@@ -393,18 +393,17 @@ label[for="address"] {
 }
 
 .grid_area {
-<<<<<<< HEAD
 	position: absolute;
 	padding-top: 10px;
 	width:95%;
-	top:100px;
+	top: 100px;
 	left: 50%;
-=======
+
     position: absolute;
     width: 95%;
     top: 100px;
     left: 50%;
->>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
+
     transform: translate(-50%);
 }
 
@@ -415,7 +414,6 @@ label[for="address"] {
 }
 
 .grid_area .row .request {
-<<<<<<< HEAD
 	flex-basis: 32%;
 	background-color: #E9A5C7;
 	border-radius: 5px;
@@ -431,39 +429,22 @@ label[for="address"] {
 	height:110px;
 	border-style: ridge;
 	position: relative;
-=======
-    flex-basis: 32%;
-    background-color: white;
-    border-radius: 5px;
-    height: 100px;
-    border-style: ridge;
-    position: relative;
-}
 
-.grid_area .row .request_v2 {
-    flex-basis: 32%;
-    background-color: white;
-    border-radius: 5px;
-    height: 110px;
-    border-style: ridge;
-    position: relative;
->>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
 }
 
 .grid_area .row .request #request_button {
     position: absolute;
     bottom: 0;
     right: 0;
-<<<<<<< HEAD
+
 	width: 100%;
 	background-color: #882255;
 	color: white;
 	cursor: pointer;
 	border: none;
 	height: 25%;
-=======
     width: 100%;
->>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
+
 }
 
 .trading_button {
@@ -475,13 +456,12 @@ label[for="address"] {
     background-color: #882255;
     cursor: pointer;
     font-size: 2rem;
-<<<<<<< HEAD
+
 	position: relative;
 	height:230px;
-=======
     position: relative;
-    height: 200px;
->>>>>>> c7d79ec4dba6abcfc0df07742b66fe9d59fac8ff
+    height: 230px;
+
 }
 
 .trading_button:hover {
