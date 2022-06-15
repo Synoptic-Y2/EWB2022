@@ -6,64 +6,66 @@ html {
 body {
     /* made using https://bgjar.com/shiny-overlay */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1111%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsRadialGradient1112)'%3e%3c/rect%3e%3cpath d='M1920 0L1917.19 0L1920 48.09z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1917.19 0L1920 48.09L1920 218.58L1633.63 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1633.63 0L1920 218.58L1920 548.36L741.7400000000001 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M741.74 0L1920 548.36L1920 760.1600000000001L474.62 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 1080L443.47 1080L0 815.1800000000001z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 815.1800000000001L443.47 1080L754.83 1080L0 583.5100000000001z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 583.51L754.83 1080L1212.8200000000002 1080L0 277.92z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 277.9200000000001L1212.8200000000002 1080L1661.3200000000002 1080L0 256.50000000000006z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1111'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cradialGradient cx='0%25' cy='50%25' r='1994.49' gradientUnits='userSpaceOnUse' id='SvgjsRadialGradient1112'%3e%3cstop stop-color='rgba(136%2c 34%2c 85%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(170%2c 68%2c 153%2c 1)' offset='0.62'%3e%3c/stop%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e");
-    margin:0;   
+    margin: 0;
 }
 
 ul {
-    padding-left:0;
+    padding-left: 0;
 }
 
 .navbar {
-    top:0;
-    background-color:#fff;
-    height:5vh;
+    top: 0;
+    background-color: #fff;
+    height: 5vh;
     border-bottom: 2px;
 
-    color:#882255;
+    color: #882255;
 }
 
 .navbar-brand {
-    font-size:2rem;
+    font-size: 2rem;
 
 }
+
 .navbar-nav {
     position: absolute;
     right: 1rem;
 }
 
 .nav-item {
-   
     position: relative;
-    margin-top:-10px;
-    margin-right:10vw;   
+    margin: top -1%;
+    margin-right: 10vw;
 }
+
 /* GLOBAL */
 
 .logout {
     position: absolute;
-    top:-10px;
-    right:-10px;
+    top: -10px;
+    right: -10px;
 
-    color:#882255;
-    background-color:#fff;  
+    color: #882255;
+    background-color: #fff;
     border-radius: 2px;
-    border:#882255;
+    border: #882255;
 
     font-size: 1rem;
 }
 
 .logout:hover {
-    color:#fff;
-    background-color:#882255;  
+    color: #fff;
+    background-color: #882255;
     border-radius: 2px;
-    border-color:#fff;
+    border-color: #fff;
 
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .error {
     color: red;
     font-size: 1;
-  }
+}
 
 
 /* LOGIN */
@@ -91,13 +93,13 @@ ul {
     margin: 10px;
 }
 
-.loginText{
-    font-size:1.25em;
+.loginText {
+    font-size: 1.25em;
 
     position: absolute;
     left: 50%;
     top: 25%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
 }
 
 .loginForm {
@@ -169,7 +171,7 @@ label[for="password"] {
     margin: 10px;
 }
 
-.registerForm{
+.registerForm {
     position: absolute;
     left: 50%;
     top: 55%;
@@ -194,22 +196,22 @@ label[for="address"] {
 }
 
 .register {
-     /*positioning*/
-     position: absolute;
-     left: 50%;
-     top: 97%;
-     transform: translate(-50%);
- 
-     font-size: 1rem;
-     width: 75%;
-     height: 7vh;
-     border: none;
-     border-radius: 5px;
-     font-weight: 600;
-     color: #fff;
-     background-color: #882255;
-     cursor: pointer;
-     font-size: 2rem;
+    /*positioning*/
+    position: absolute;
+    left: 50%;
+    top: 97%;
+    transform: translate(-50%);
+
+    font-size: 1rem;
+    width: 75%;
+    height: 7vh;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #882255;
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 
@@ -222,20 +224,20 @@ label[for="address"] {
 /* Home */
 
 .homeBox {
-background-color: white;
-height: 80vh;
-width: 80vw;
+    background-color: white;
+    height: 80vh;
+    width: 80vw;
 
-/*center box*/
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
+    /*center box*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-border-radius: 20px;
-padding: 10px;
+    border-radius: 20px;
+    padding: 10px;
 
-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .homeTitle {
@@ -244,18 +246,18 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     margin: 10px;
 }
 
-#topLine{
-	margin-left:10px;
+#topLine {
+    margin-left: 10px;
 }
 
-#bottomLine{
-    margin-left:10px;
+#bottomLine {
+    margin-left: 10px;
 }
 
 .main-button {
     width: 39vw;
     height: 30vh;
-    border:  2px solid black;
+    border: 2px solid black;
     border-radius: 5px;
     font-weight: 600;
     color: white;
@@ -290,9 +292,9 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 #container {
-  float:right;
-  width: 500px;
-  height: 400px;
-  margin: 0;
-  padding: 0;
+    float: right;
+    width: 500px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
 }
