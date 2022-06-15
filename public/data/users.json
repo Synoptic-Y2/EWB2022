@@ -19,5 +19,18 @@
                 "amount": "2"
             }
         ]
+    },
+    {
+        "id": "1655302129489",
+        "username": "test123",
+        "email": "test@test.com",
+        "password": "$2b$10$2BIWX6EzNbq9YcZQg6pItOjxeGT1bdCce9kQOQURdr2I6wfv0fj.K",
+        "address": "test",
+        "priv": "no",
+        "crop": [
+            "oats"
+        ],
+        "noncrop": [],
+        "request": {}
     }
 ]
