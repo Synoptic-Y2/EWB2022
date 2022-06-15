@@ -22,6 +22,11 @@ ul {
     color: #882255;
 }
 
+.navbar a {
+ text-decoration: none;
+ color:#882255;
+}
+
 .navbar-brand {
     font-size: 2rem;
 
@@ -29,7 +34,10 @@ ul {
 
 .navbar-nav {
     position: absolute;
-    right: 1rem;
+    top: 1.5vh;
+    right: 2.2rem;
+    margin-right:7vw; 
+    
 }
 
 .nav-item {
