@@ -130,13 +130,33 @@ app.post('/new_plant', checkAuthenticated, async (req, res) => {
     }
 })
 
-/************ Other Pages ************/
+/************ Trading ************/
 
-app.get('/create_a_request', (req, res) => {
+app.get('/trading', (req, res) => {
+    res.render('Trading.ejs', { layout: './pages/_head.ejs', title: 'Trading' })
+})
+
+app.get('/trading/active_requests', (req, res) => {
+    res.render('Trading_Active.ejs', { layout: './pages/_head.ejs', title: 'Active Requests' })
+})
+
+app.get('/trading/all_requests', (req, res) => {
+    res.render('Trading_All.ejs', { layout: './pages/_head.ejs', title: 'All Requests' })
+})
+
+app.get('/trading/archived_requests', (req, res) => {
+    res.render('Trading_Archived.ejs', { layout: './pages/_head.ejs', title: 'Archived Requests' })
+})
+
+app.get('/trading/delete_a_request', (req, res) => {
+    res.render('Trading_Delete.ejs', { layout: './pages/_head.ejs', title: 'Delete a Request' })
+})
+
+app.get('/trading/create_a_request', (req, res) => {
     res.render('CreateRequest.ejs', { layout: './pages/_head.ejs', title: 'Create a Request' })
 })
 
-app.post('/create_a_request', checkAuthenticated, async (req, res) => {
+app.post('/trading/create_a_request', checkAuthenticated, async (req, res) => {
 
 	try {
 		users.forEach(function (obj, index) {
@@ -167,10 +187,6 @@ app.get('/information', (req, res) => {
 
 app.get('/community', (req, res) => {
     res.render('Community.ejs', { layout: './pages/_head.ejs', title: 'Community' })
-})
-
-app.get('/trading', (req, res) => {
-    res.render('Trading.ejs', { layout: './pages/_head.ejs', title: 'Trading' })
 })
 
 app.get('/weather', (req, res) => {

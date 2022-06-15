@@ -3,10 +3,17 @@
 <head>
 </head>   
 <body>
-
-<h1>Trading</h1>
-
-<a href="/create_a_request">Request a crop</a>
+	<h1>Trading</h1>
+	
+	<div id="topLine">
+			<button class=main-button onclick="document.location='/trading/active_requests'">Active Requests</button>
+			<button class=main-button onclick="document.location='/trading/all_requests'">See All Requests</button>
+		</div>
+		<div id="bottomLine">
+			<button class=small-button onclick="document.location='/trading/archived_requests'">Archived Requests</button>
+			<button class=small-button onclick="document.location='/trading/create_a_request'">Create a Request</button>
+			<button class=small-button onclick="document.location='/trading/delete_a_request'">Delete a Request</button>
+	</div>
 
 </body>
 </html>
