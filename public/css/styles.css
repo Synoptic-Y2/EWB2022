@@ -75,10 +75,7 @@ ul {
     font-size: 1;
 }
 
-
-/* LOGIN */
-
-.loginBox {
+.smallBox {
     background-color: white;
     height: 65vh;
     width: 40vw;
@@ -94,6 +91,11 @@ ul {
 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
+
+
+/* LOGIN */
+
 
 .loginTitle {
     text-align: center;
@@ -171,7 +173,7 @@ label[for="password"] {
     transform: translate(-50%);
 }
 
-/*Register*/
+/*REGISTER*/
 
 .registerTitle {
     text-align: center;
@@ -314,6 +316,30 @@ label[for="address"] {
     background-color: white;
     color: #882255;
 }
+
+/*NEW PLANT*/
+#new_plant {
+    
+    
+    position: absolute;
+
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    line-height: 200%;
+
+    text-align:center;
+    
+}
+
+#new_plant h1{
+    font-size:0.5rem;
+}
+
+
+
+
+/*WEATHER*/
 
 #container {
     float: right;
