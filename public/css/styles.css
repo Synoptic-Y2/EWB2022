@@ -21,6 +21,7 @@ ul {
 
 table {
     font-size:1.2rem;
+    line-height: 7vh;
   }
 
 .navbar {
@@ -288,7 +289,7 @@ label[for="address"] {
 
 /* Home */
 
-.homeBox {
+.bigBox {
     background-color: white;
     height: 80vh;
     width: 80vw;
