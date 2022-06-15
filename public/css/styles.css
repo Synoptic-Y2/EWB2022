@@ -460,14 +460,14 @@ label[for="address"] {
 }
 
 #trading_back{
-	float: right;
-	transform: translate(-5%, -200%);
+	float: left;
+	transform: translate(10%, 1900%);
 	
 	color: #882255;
     background-color: #fff;
     border-radius: 2px;
     border: #882255;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #trading_back:hover {
@@ -477,4 +477,35 @@ label[for="address"] {
     border-color: #fff;
 
     cursor: pointer;
+}
+
+#request_back{
+	float: left;
+	transform: translate(10%, 1150%);
+	
+	color: #882255;
+    background-color: #fff;
+    border-radius: 2px;
+    border: #882255;
+    font-size: 20px;
+}
+
+#request_back:hover {
+    color: #fff;
+    background-color: #882255;
+    border-radius: 2px;
+    border-color: #fff;
+
+    cursor: pointer;
+}
+
+#create_a_request {
+    position: absolute;
+
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    line-height: 200%;
+
+    text-align:center;
 }
