@@ -5,9 +5,10 @@
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
 </head>   
 <body>
-
+<div class="homeBox">
 <h1>Community Page</h1>
-	
+	<div class = "column">
+		<div class = "centerLeft">
 	<table>
 		<tr>
 			<th>Name</th>
@@ -45,7 +46,10 @@
 			<td></td>
 		</tr>
 	</table>
-
+</div>
+</div>
+<div class = "column">
+	<div class = "centerRight">
 	<div id="container"></div>
     <script>
 	anychart.onDocumentReady(function() {
@@ -82,5 +86,8 @@
 		chart.draw();
 	});
     </script>
+	</div>
+	</div>
+</div>
 </body>
 </html>

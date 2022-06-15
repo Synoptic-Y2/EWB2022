@@ -9,9 +9,19 @@ body {
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 10px;
+}
+
 ul {
     padding-left: 0;
 }
+
+table {
+    font-size:1.2rem;
+  }
 
 .navbar {
     top: 0;
@@ -45,6 +55,35 @@ ul {
     margin: top -1%;
     margin-right: 10vw;
 }
+
+.column {
+   float:left;
+   width: 50%;
+}
+
+.centerRight {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.centerLeft {
+    
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    
+    
+}
+
+
 
 /* GLOBAL */
 
