@@ -5,21 +5,23 @@
 </head>   
 <body>
 
-<h1>Create a new request</h1>
+	<h1>Create a new request</h1>
 
-<form name="create_a_request" id="create_a_request" action="/create_a_request" method="POST">
-	Crop: <select name="specplant" id="specplant" required>
-		<option value="wheat" selected="selected">wheat</option>
-		<option value="oats" selected="selected">oats</option>
-		<option value="cauliflower" selected="selected">cauliflower</option>
-		<option value="beetroot" selected="selected">beetroot</option>
-		</select>
-		<br><br>
-	Amount: <input type="number" name="amount" id="amount" required>
-		</input>
-		<br><br>
-	<input type="submit" value="Submit">  
-</form>
+	<button id="trading_back" onclick="document.location='/trading'">Back to Trading</button>
+
+	<form name="create_a_request" id="create_a_request" action="/create_a_request" method="POST">
+		Crop: <select name="specplant" id="specplant" required>
+			<option value="wheat" selected="selected">wheat</option>
+			<option value="oats" selected="selected">oats</option>
+			<option value="cauliflower" selected="selected">cauliflower</option>
+			<option value="beetroot" selected="selected">beetroot</option>
+			</select>
+			<br><br>
+		Amount: <input type="number" name="amount" id="amount" required>
+			</input>
+			<br><br>
+		<input type="submit" value="Submit">  
+	</form>
 
 </body>
 </html>
