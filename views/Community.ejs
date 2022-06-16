@@ -1,90 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
+	<meta charset="utf-8">
+	<script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script> 
     <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
+	
+	<script>
+		anychart.onDocumentReady(function() {
+			// set the data
+			var data = [
+				{x: "wheat", value: 13},
+				{x: "oats", value: 11},
+				{x: "cauliflower", value: 10},
+				{x: "beetroot", value: 27}
+			];
+
+			// create the chart
+			var chart = anychart.pie();
+
+			// set the chart title
+			chart.title("Crops Throught the Community");
+
+			// add the data
+			chart.data(data);
+			
+			// set legend position and items layout
+			chart
+			.legend()
+			.position('right')
+			.itemsLayout('vertical')
+			.align('centre');
+			
+			//visuals
+			chart.palette(anychart.palettes.glamour);
+
+
+			// display the chart in the container
+			chart.container('container');
+			chart.draw();
+		});	
+	</script>
 </head>   
+
 <body>
-<div class="bigBox">
-<h1>Community Page</h1>
-
-	<div class = "centerLeft">
-		<table class= "com_table">
-			<tr>
-				<th>Name</th>
-				<th>Number of Plants</th>
-				<th>Plants</th>
-			</tr>
-			<tr>
-				<td>BILLY PRATT</td>
-				<td>3</td>
-				<td>beetroot</td>
-			</tr>
-			<tr>
-				<td>KAREN LIDDY</td>
-				<td>2<BR>5</td>
-				<td>cauliflower<BR>oats</td>
-			</tr>
-			<tr>
-				<td>KIM AXWORTHY</td>
-				<td>3</td>
-				<td>wheat</td>
-			</tr>
-			<tr>
-				<td>ROGER DECLE</td>
-				<td>6</td>
-				<td>cauliflower</td>
-			</tr>
-			<tr>
-				<td>PETER RENEHAN</td>
-				<td>12</td>
-				<td>beetroot</td>
-			</tr>
-			<tr>
-				<td>PRIVATE</td>
-				<td>10<BR>6<BR>2<BR>12</td>
-				<td>wheat<BR>oats<BR>cauliflower<BR>beetroot</td>
-			</tr>
-		</table>
+	<div class="bigBox">
+		<h1>Community Page</h1>
+		
+		<div class = "centerLeft">
+			<table class= "com_table">  <%# this is to create the table on the community page, it shows the the percentages of crops grown%>
+				<tr>
+					<th>Name</th>					<%# column headers%>
+					<th>Number of Plants</th>
+					<th>Plants</th>
+				</tr>
+				<tr>
+					<td>BILLY PRATT</td>
+					<td>3</td>
+					<td>beetroot</td>
+				</tr>
+				<tr>
+					<td>KAREN LIDDY</td>
+					<td>2<BR>5</td>
+					<td>cauliflower<BR>oats</td>
+				</tr>
+				<tr>
+					<td>KIM AXWORTHY</td>
+					<td>3</td>
+					<td>wheat</td>
+				</tr>
+				<tr>
+					<td>ROGER DECLE</td>
+					<td>6</td>
+					<td>cauliflower</td>
+				</tr>
+				<tr>
+					<td>PETER RENEHAN</td>
+					<td>12</td>
+					<td>beetroot</td>
+				</tr>
+				<tr>
+					<td>PRIVATE</td>
+					<td>10<BR>6<BR>2<BR>12</td>
+					<td>wheat<BR>oats<BR>cauliflower<BR>beetroot</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "centerRight" id="container"></div>
 	</div>
-
-	<div class = "centerRight" id="container"></div>
-    <script>
-	anychart.onDocumentReady(function() {
-		// set the data
-		var data = [
-			{x: "wheat", value: 13},
-			{x: "oats", value: 11},
-			{x: "cauliflower", value: 10},
-			{x: "beetroot", value: 27}
-		];
-
-		// create the chart
-		var chart = anychart.pie();
-
-		// set the chart title
-		chart.title("Crops Throught the Community");
-
-		// add the data
-		chart.data(data);
-		
-		// set legend position and items layout
-		chart
-		.legend()
-		.position('right')
-		.itemsLayout('vertical')
-		.align('centre');
-		
-		//visuals
-		chart.palette(anychart.palettes.glamour);
-
-
-		// display the chart in the container
-		chart.container('container');
-		chart.draw();
-	});
-    </script>
-
-</div>
 </body>
 </html>

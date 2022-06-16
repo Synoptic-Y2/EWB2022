@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	
-<script>
-var plantLists = {
-	"Crop": ["wheat", "oats", "cauliflower", "beetroot"],
-	"Non-Crop": [ "Gum tree", "Bottlebrush", "wattle"]
-}
-window.onload = function() {
-	var planttypeSel = document.getElementById("planttype");
-	var specplantSel = document.getElementById("specplant");
-	for (var y in plantLists) {
-		planttypeSel.options[planttypeSel.options.length] = new Option(y, y);
-	}
-	planttypeSel.onchange = function() {
-	    specplantSel.length = 1;
-		
-		var z = plantLists[this.value];
-		for (var i = 0; i < z.length; i++) {
-			specplantSel.options[specplantSel.options.length] = new Option(z[i], z[i]);
+	<meta charset="utf-8">
+	<script>
+		var plantLists = {																			//create an array of arrays
+			"Crop": ["wheat", "oats", "cauliflower", "beetroot"],
+			"Non-Crop": [ "Gum tree", "Bottlebrush", "wattle"]
 		}
-	}
-}
-</script>
+		window.onload = function() {														//when the window is loaded
+			var planttypeSel = document.getElementById("planttype");						//get the element with the tag specified
+			var specplantSel = document.getElementById("specplant");						// *
+			for (var y in plantLists) {
+				planttypeSel.options[planttypeSel.options.length] = new Option(y, y);		//for every array in plantList get the field and make it a new option
+			}
+			planttypeSel.onchange = function() {													//when something is selected in the first selector
+			    specplantSel.length = 1;															
+				
+				var z = plantLists[this.value];														//making the array selected its own variable
+				for (var i = 0; i < z.length; i++) {												//for each string in the array
+					specplantSel.options[specplantSel.options.length] = new Option(z[i], z[i]);		//make that string a new option in the selector
+				}
+			}
+		}
+	</script>
 </head>   
 <body>
 	<div class="formArea">
 		<div class="loginTitle">New Plant</div>
+		
 		<form name="new_plant" id="new_plant" action="/new_plant" method="POST">
 			Plant Type: <br><select name="planttype" id="planttype" required>
 				<option value="" selected="selected">Select a Plant Type</option>
 				</select>
 				<br><br>
+				
 			Specific Plant: <br><select name="specplant" id="specplant" required>
 				<option value="" selected="selected">Please select a Plant Type first</option>
 				</select>
