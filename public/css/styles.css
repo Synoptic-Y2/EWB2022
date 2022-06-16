@@ -252,6 +252,8 @@ label[for="password"] {
     font-size: 2rem;
 }
 
+
+
 /* Hide Label */
 
 label[for="email"] {
@@ -526,7 +528,7 @@ label[for="names"] {
 
 #register_back {
     float: left;
-    transform: translate(10%, 1940%);
+    transform: translate(10%, 1%);
 
     color: #882255;
     background-color: #fff;
