@@ -46,7 +46,7 @@ let users = JSON.parse(rawdata);
 
 /************ Home - Home Page ************/
 app.get('/', checkAuthenticated, (req, res) => {
-	let userID = req.user.id
+    let userID = req.user.id
     res.render('Home.ejs', { layout: './pages/_head.ejs', title: 'Home', passedid: req.user.id })
 })
 
@@ -74,28 +74,28 @@ app.get('/register', checkNotAuthenticated, (req, res) => {
 
 app.post('/register', checkNotAuthenticated, async (req, res) => {
     try {
-	
+
         const hPass = await bcrypt.hash(req.body.password, 10)
-		
+
         users.push({
             id: Date.now().toString(),
             username: req.body.username,
-			names: req.body.names,
+            names: req.body.names,
             email: req.body.email,
             password: hPass,
             address: req.body.address,
             priv: req.body.priv,
-			crop: [],
-			noncrop: [],
-			request: {}
+            crop: [],
+            noncrop: [],
+            request: {}
         })
-	
+
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
         res.redirect('/login')
     }
     catch {
-		
+
         res.redirect('/register')
     }
 })
@@ -108,19 +108,19 @@ app.get('/new_plant', (req, res) => {
 
 app.post('/new_plant', checkAuthenticated, async (req, res) => {
 
-	planttype = req.body.planttype
-	specplant = req.body.specplant
-	try {
-		users.forEach(function (obj, index) {
-			if (obj.id == req.user.id){
-				if(planttype == "Crop"){
-					obj.crop.push(specplant)
-				}
-				else if(planttype == "Non-Crop"){
-					obj.noncrop.push(specplant)
-				}
-			}
-		})
+    planttype = req.body.planttype
+    specplant = req.body.specplant
+    try {
+        users.forEach(function (obj, index) {
+            if (obj.id == req.user.id) {
+                if (planttype == "Crop") {
+                    obj.crop.push(specplant)
+                }
+                else if (planttype == "Non-Crop") {
+                    obj.noncrop.push(specplant)
+                }
+            }
+        })
 
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
@@ -159,17 +159,17 @@ app.get('/trading/create_a_request', (req, res) => {
 
 app.post('/trading/create_a_request', checkAuthenticated, async (req, res) => {
 
-	try {
-		users.forEach(function (obj, index) {
-			if (obj.id == req.user.id){
-				obj.request.push({
-					crop: req.body.specplant,
-					amount: req.body.amount,
-					filled:0,
-					filledBy:0
-				})
-			}
-		})
+    try {
+        users.forEach(function (obj, index) {
+            if (obj.id == req.user.id) {
+                obj.request.push({
+                    crop: req.body.specplant,
+                    amount: req.body.amount,
+                    filled: 0,
+                    filledBy: 0
+                })
+            }
+        })
         let userdata = JSON.stringify(users, undefined, 4)
         fs.writeFileSync('public/data/users.json', userdata)
         res.redirect('trading')
@@ -181,11 +181,11 @@ app.post('/trading/create_a_request', checkAuthenticated, async (req, res) => {
 
 /************ Other Pages ************/
 app.get('/help', (req, res) => {
-    res.render('Help.ejs', { layout: './pages/_head.ejs', title: 'Sign Up' })
+    res.render('Help.ejs', { layout: './pages/_head.ejs', title: 'Help' })
 })
 
 app.get('/information', (req, res) => {
-    res.render('Help.ejs', { layout: './pages/_head.ejs', title: 'Sign Up' })
+    res.render('Info.ejs', { layout: './pages/_head.ejs', title: 'Information' })
 })
 
 app.get('/community', (req, res) => {
