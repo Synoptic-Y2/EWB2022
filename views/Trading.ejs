@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-</head>   
+	<meta charset="utf-8">
+</head>  
 <body>
 	<div class="bigBox">
-	<h1>Trading</h1>
-	
-	<div class="grid_area">
-		<div class="row">
-			<button class="trading_button" onclick="document.location='/trading/active_requests'">Your Active Requests</button>
-			<button class="trading_button" onclick="document.location='/trading/all_requests'">See All Requests</button>
+		<h1>Trading</h1>
+		
+		<div class="grid_area">
+			<div class="row">
+				<button class="trading_button" onclick="document.location='/trading/active_requests'">Your Active Requests</button>
+				<button class="trading_button" onclick="document.location='/trading/all_requests'">See All Requests</button>
+			</div>
+			
+			<div class="row">
+				<button class="trading_button" onclick="document.location='/trading/archived_requests'">Your Archived Requests</button>
+				<button class="trading_button" onclick="document.location='/trading/create_a_request'">Create a Request</button>
+			</div>
 		</div>
-		<div class="row">
-			<button class="trading_button" onclick="document.location='/trading/archived_requests'">Your Archived Requests</button>
-			<button class="trading_button" onclick="document.location='/trading/create_a_request'">Create a Request</button>
-		</div>
-	</div>
 	</div>
 </body>
 </html>
