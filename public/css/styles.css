@@ -13,7 +13,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3vw;
     margin: 10px;
 }
 
@@ -118,7 +118,7 @@ table {
 
 .smallBox {
     background-color: white;
-    height: 85vh;
+    height: 80vh;
     width: 40vw;
 
     /*center login box*/
@@ -264,6 +264,8 @@ label[for="password"] {
     cursor: pointer;
     font-size: 2rem;
 }
+
+
 
 /* Hide Label */
 
@@ -539,7 +541,7 @@ label[for="names"] {
 
 #register_back {
     float: left;
-    transform: translate(10%, 1940%);
+    transform: translate(10%, 1%);
 
     color: #882255;
     background-color: #fff;
@@ -582,13 +584,14 @@ th {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 1.5vw;
     line-height: 0px;
 }
 
 .help {
     padding: 0;
     margin: 7px;
+    font-size: 1vw;
 }
 
 .helpDIV {

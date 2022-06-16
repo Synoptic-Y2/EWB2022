@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 </head>
+
 <body>
 
 	<main>
@@ -12,27 +14,31 @@
 			<div class="registerForm">
 				<form class="form" id="createAccount" method="POST" action="/register">
 					<label for="username">Username</label>
-					<input class ="formBox" type="text" id="username" name="username" placeholder="Username" required>
-					
+					<input class="formBox" type="text" id="username" name="username" placeholder="Username" required>
+
 					<label for="names">First and Last Names</label>
-					<input class ="formBox" type="names" id="names" name="names" placeholder="First and Last Names" required>
-					
+					<input class="formBox" type="names" id="names" name="names" placeholder="First and Last Names"
+						required>
+
 					<label for="email">Email</label>
-					<input class ="formBox" type="email" id="email" name="email" placeholder="E-mail" required>
+					<input class="formBox" type="email" id="email" name="email" placeholder="E-mail" required>
 
 					<label for="password">Password</label>
-					<input class ="formBox" type="password" id="password" name="password" placeholder="Password" required>
+					<input class="formBox" type="password" id="password" name="password" placeholder="Password"
+						required>
 
 					<label for="password">Confirm Password</label>
-					<input class ="formBox" type="password" id="password2" name="password2" placeholder="Confirm Password" required>
-					
+					<input class="formBox" type="password" id="password2" name="password2"
+						placeholder="Confirm Password" required>
+
 					<div class="form-input-error-message"></div>
-					
+
 					<div class="error" id="error" placeholder="no errors"></div>
-					
+
 					<label for="address">Address</label>
-					<input class ="formBox" type="address" id="address" name="address" placeholder="Home Address" required>
-					
+					<input class="formBox" type="address" id="address" name="address" placeholder="Home Address"
+						required>
+
 					<p class="form-link">Want Your Account Private?<a href="/help">(i)</a>
 						<select name="priv" id="priv">
 							<option value="no">No</option>
@@ -41,10 +47,11 @@
 
 						<button class="register" type="submit">Register</button>
 				</form>
+				<button class="back" type="delete_button" id="register_back"
+					onclick="document.location='/login'">Back</button>
 			</div>
-			<button type="delete_button" id="register_back" onclick="document.location='/login'">Back</button>
 		</div>
-		
+
 	</main>
 </body>
 
