@@ -25,22 +25,19 @@ window.onload = function() {
 </script>
 </head>   
 <body>
-	<div class="smallBox">
-<div class="loginTitle">Create a new request</div>
-
-<form name="new_plant" id="new_plant" action="/new_plant" method="POST">
-	Plant Type: <br><select name="planttype" id="planttype" required>
-		<option value="" selected="selected">Select a Plant Type</option>
-		</select>
-		<br><br>
-	Specific Plant: <br><select name="specplant" id="specplant" required>
-		<option value="" selected="selected">Please select a Plant Type first</option>
-		</select>
-		<br><br>
-		<button class= "linked_button" type="submit">Submit</button>
-	
-	
-</form>
-</div>
+	<div class="formArea">
+		<div class="loginTitle">New Plant</div>
+		<form name="new_plant" id="new_plant" action="/new_plant" method="POST">
+			Plant Type: <br><select name="planttype" id="planttype" required>
+				<option value="" selected="selected">Select a Plant Type</option>
+				</select>
+				<br><br>
+			Specific Plant: <br><select name="specplant" id="specplant" required>
+				<option value="" selected="selected">Please select a Plant Type first</option>
+				</select>
+				<br><br>
+				<button class= "linked_button" type="submit">Submit</button>
+		</form>
+	</div>
 </body>
 </html>

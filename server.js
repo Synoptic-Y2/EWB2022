@@ -157,7 +157,7 @@ app.get('/trading/create_a_request', (req, res) => {
     res.render('CreateRequest.ejs', { layout: './pages/_head.ejs', title: 'Create a Request' })
 })
 
-app.post('/trading/create_a_request', checkAuthenticated, async (req, res) => {
+app.post('/create_a_request', checkAuthenticated, async (req, res) => {
 
     try {
         users.forEach(function (obj, index) {

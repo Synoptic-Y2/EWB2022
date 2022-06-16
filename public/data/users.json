@@ -2,7 +2,7 @@
     {
         "id": "1655218665764",
         "username": "test",
-		"names": "TEST TEST",
+        "names": "TEST TEST",
         "email": "test@test",
         "password": "$2b$10$X2X0anxZwkQbJ3bhS.qR2eXpUWgqCuXA1F1Hjjk0FaL1uEOSfVcmy",
         "address": "6 test Ave",
@@ -19,13 +19,25 @@
             {
                 "crop": "cauliflower",
                 "amount": "2"
+            },
+            {
+                "crop": "beetroot",
+                "amount": "3",
+                "filled": 0,
+                "filledBy": 0
+            },
+            {
+                "crop": "beetroot",
+                "amount": "5",
+                "filled": 0,
+                "filledBy": 0
             }
         ]
     },
     {
         "id": "1655302129489",
         "username": "test123",
-		"names": "TEST TEST",
+        "names": "TEST TEST",
         "email": "test@test.com",
         "password": "$2b$10$2BIWX6EzNbq9YcZQg6pItOjxeGT1bdCce9kQOQURdr2I6wfv0fj.K",
         "address": "test",

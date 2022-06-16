@@ -133,6 +133,22 @@ table {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.formArea{
+	background-color: white;
+    height: 53vh;
+    width: 40vw;
+
+    /*center login box*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 20px;
+    padding: 10px;
+
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
 
 
 /* LOGIN */
@@ -167,9 +183,6 @@ table {
     height: 5vh;
     margin: 0.5em;
     font-size: 1em;
-
-
-
 
     line-height: 300%;
 }
@@ -486,7 +499,7 @@ label[for="names"] {
 
 #trading_back {
     float: left;
-    transform: translate(10%, 1900%);
+    transform: translate(10%, 2100%);
 
     color: #882255;
     background-color: #fff;
